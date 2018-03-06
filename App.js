@@ -22,7 +22,7 @@ export default class App extends React.Component {
           <Text
             style={{ color: 'white', fontSize: 30}}
           >
-            ログイン
+            Login
           </Text>
         </View>
         <View style={{flex: 2, left: 20}}>
@@ -35,6 +35,7 @@ export default class App extends React.Component {
             <TextInput
               style={{ color: 'white', borderBottomColor: 'white', borderBottomWidth: 1, width: '85%', paddingBottom: 10}}
               placeholder="Please enter your email address."
+              placeholderTextColor="ghostwhite"
               onChangeText={(email) => this.setState({email})}
             />
           </View>
@@ -46,22 +47,37 @@ export default class App extends React.Component {
             </Text>
             <TextInput
               style={{ color: 'white', borderBottomColor: 'white', borderBottomWidth: 1, width: '85%', paddingBottom: 10}}
-              placeholder="Please enter your email address."
+              placeholder="Please enter your password."
+              placeholderTextColor="ghostwhite"
               onChangeText={(password) => this.setState({password})}
             />
           </View>
         </View>
         <View style={{flex: 1, flexDirection: 'row', alignItems: 'center'}}>
-          <Button
-            title="ログイン"
-            color="white"
-            onPress={() => Alert.alert('Login with ' + this.state.email + ' & ' + this.state.password)}
-          />
-          <Button
-            title="Forgot password?"
-            color="white"
-            onPress={() => Alert.alert('Go to reset password page!')}
-          />
+          <View style={{flex: 1, alignItems: 'center'}}>
+            <Text
+              style={{color: 'white', textAlign: 'center', backgroundColor: 'pink', width: 100, height: 40, fontSize: 18, paddingTop: 8}}
+              onPress={() => Alert.alert('Login with ' + this.state.email + ' & ' + this.state.password)}
+            >
+              Login
+            </Text>
+          </View>
+          <View style={{flex: 1, alignItems: 'center'}}>
+            <Text
+              style={{color: 'white', textAlign: 'center', height: 40, fontSize: 12, paddingTop: 12, paddingLeft: 5, paddingRight: 5}}
+              onPress={() => Alert.alert('Go to reset password page!')}
+            >
+              Forgot password?
+            </Text>
+          </View>
+        </View>
+        <View style={{flex: 1, alignItems: 'center'}}>
+          <Text
+            style={{ color: 'white', top: 40, backgroundColor: 'gray', textAlign: 'center', width: '100%', height: 60, justifyContent: 'center', paddingTop: 20 }}
+            onPress={() => Alert.alert('Go to SignUp page')}
+          >
+           アカウントをお持ちでない方はこちら 
+          </Text>
         </View>
       </View>
     );
