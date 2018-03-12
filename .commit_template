@@ -1,0 +1,19 @@
+
+
+# ----- Format -----
+# :emoji: Subject
+#
+# Commit body...
+
+# ----- Emojis -----
+# 🎉 :tada:        Adding Big Feature
+# ✨ :sparkles:    Adding Small or Part of Feature
+# 🐛 :bug:         Bug Fix
+# 👍 :+1:          Improvement of the Feature
+# 🚀 :rocket:      Improvement of the Performance
+# 😎 :sunglasses:  Refactoring
+# 👻 :ghost:       Removing Unnecessary Features, Codes
+# 💚 :green_heart: Solving Error of Test or CI
+# 💇 :haircut:     Fixing Code Style or Lint
+# 📝 :memo:        Changing Only Docs
+# 🆙 :up:          Updating Packages, Dependencies
