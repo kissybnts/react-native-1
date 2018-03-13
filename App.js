@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import Login from './container/Login';
 
 export default class App extends React.Component {
   render() {
@@ -9,6 +10,7 @@ export default class App extends React.Component {
           <Text style={styles.headerText}>Smack App</Text>
         </View>
         <View style={styles.body}>
+          <Login/>
         </View>
       </View>
     );
