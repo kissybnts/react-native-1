@@ -1,16 +1,17 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import Login from './container/Login';
+import SideDrawer from './component/SideDrawer';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.header}>
+        {/* <View style={styles.header}>
           <Text style={styles.headerText}>Smack App</Text>
-        </View>
+        </View> */}
         <View style={styles.body}>
-          <Login/>
+          <SideDrawer/>
         </View>
       </View>
     );
