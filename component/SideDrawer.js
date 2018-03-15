@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Image, Text, Button, Alert } from 'react-native';
+import { View, StyleSheet, Image, Text, Alert } from 'react-native';
 
 const sideDrawer = (props) => {
     return (
@@ -35,7 +35,11 @@ const sideDrawer = (props) => {
                         >
                             Login
                         </Text>
-                        <Image source={require('./assets/addchannelbutton.png')} style={{height: 17, width: 17, marginRight: 10, marginTop: 5}}/>
+                        <Image 
+                            source={require('./assets/addchannelbutton.png')} 
+                            style={profileStyle.addChannelButton}
+                            onPress={() => Alert.alert('Add channel')}
+                        />
                     </View>
                 </View>
                 <View
@@ -54,7 +58,6 @@ const styles = StyleSheet.create({
     },
     sideDrawerView: {
         flex: 1,
-        width: 250
     },
     headerView: {
         flex: 3,
@@ -71,7 +74,7 @@ const profileStyle = StyleSheet.create({
         flex: 7,
         alignItems: 'flex-end',
         flexDirection: 'row',
-        justifyContent: 'center'
+        justifyContent: 'flex-start'
     },
     controlsView: {
         flex: 3,
@@ -86,7 +89,6 @@ const profileStyle = StyleSheet.create({
     },
     textView: {
         height: 50,
-        width: 180,
         justifyContent: 'center'
     }, 
     text: {
@@ -97,10 +99,14 @@ const profileStyle = StyleSheet.create({
         color: 'white', 
         fontSize: 15, 
         width: 70, 
-        textAlign: 'center'
+        textAlign: 'center',
+        paddingVertical: 8
     },
     addChannelButton: {
-           
+        height: 17, 
+        width: 17, 
+        marginRight: 10, 
+        marginTop: 5
     }
 });
 
