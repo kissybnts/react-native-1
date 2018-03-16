@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import Login from './container/Login';
 import SideDrawer from './component/SideDrawer';
 import { DrawerNavigator } from 'react-navigation';
+import Channel from './component/Channel';
 
 class App extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class App extends React.Component {
           </Text>
         </View>
         <View style={styles.body}>
-          <Login/>
+          <Channel/>
         </View>
       </View>
     );
